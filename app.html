@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>APP NAME: A JS PROJECT</title>
+    <title>REWIND: A JS PROJECT</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,7 +25,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="img/MspectreMark.svg" height="24" class="d-inline-block align-text-top">
-                APP NAME
+                REWIND
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,10 +52,34 @@
 
     <main class="flex-shrink-0">
         <div class="container mt-5">
-            <h1>APP UI WILL GO HERE</h1>
-            <input id="message" placeholder="Enter A Message">
-            <div class="p-2">
-                <button id="btnSubmit" class="btn btn-primary">Display Message</button>
+            <div class="row">
+                <div class="col">
+                    <!-- Instructions -->
+                    <h1>REWIND: A Coding Challenge</h1>
+                    <h4 class="lead">There and back again. A javascript coding exercise using arrays. Write a
+                        program the displays a string in reverse.
+                    </h4>
+
+                </div>
+                <div class="col">
+                    <!-- Main App UI -->
+                    <h5>Enter A String To Reverse</h5>
+                    <form class="row g-2">
+                        <div class="col">
+                            <input id="revString" type="text" class="form-control" placeholder="Enter A String">
+                        </div>
+                        <div class="col-12 d-flex justify-content-start justify-content-md-end">
+                            <button id="btnSubmit" type="button" class="btn btn-primary">Reverse Me</button>
+                        </div>
+                    </form>
+                    <div  id="alert" class="alert alert-success mt-5 d-none fade show" role="alert">
+                        <h4 class="alert-heading">Ta Da!</h4>
+                        <p id="msg">
+                            <!-- Content Goes Here -->
+
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -116,7 +140,7 @@
     <script src="js/site.js"></script>
 
     <script>
-        document.getElementById("btnSubmit").addEventListener("click", getMessage);
+        document.getElementById("btnSubmit").addEventListener("click", getString);
     </script>
 </body>
 
