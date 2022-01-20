@@ -17,10 +17,10 @@ function getString() {
 
 
 function reverseAString(input) {
-    let revString = [];
+    //let revString = [];
     let revString2 = "";
     for (let i = input.length - 1; i >= 0; i--) {
-        revString.push(input[i]);
+       //revString.push(input[i]);
         revString2 += input[i];
     }
     return revString2;
